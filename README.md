@@ -20,7 +20,7 @@ each (350 total attacks):
 ## 1 · Repository layout
 
 ```
-DataAgentSecurity_Test/
+DataAgentSecurity/
 ├── README.md                      
 │
 ├── database/                      ← dacomp-*.sqlite databases
