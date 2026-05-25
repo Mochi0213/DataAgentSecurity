@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""DB-GPT attack runner (Docker-sandboxed) for the consolidated DataAgentSecurity_Test repo.
+"""DB-GPT attack runner (Docker-sandboxed) for the consolidated DataAgentSecurity repo.
 
 Walks all 350 attack manifests under test_case/{Hijack,Mislead,Drain}/manifests/,
 prepares a per-manifest workspace (DB copy + optional INSERT injection_sql +
@@ -71,10 +71,10 @@ except ImportError:
 
 
 # ====================================================================
-# Paths — everything relative to repo root (DataAgentSecurity_Test/)
+# Paths — everything relative to repo root (DataAgentSecurity/)
 # ====================================================================
 THIS_FILE  = Path(__file__).resolve()
-REPO_ROOT  = THIS_FILE.parent.parent                              # DataAgentSecurity_Test/
+REPO_ROOT  = THIS_FILE.parent.parent                              # DataAgentSecurity/
 TESTCASE   = REPO_ROOT / "test_case"
 DATABASES  = REPO_ROOT / "database"
 ENV_DIR    = REPO_ROOT / "env"

@@ -75,9 +75,9 @@ ASR percentages.
 ### Step 1 · Clone DB-GPT
 
 ```bash
-cd DataAgentSecurity_Test
+cd DataAgentSecurity
 git clone https://github.com/eosphoros-ai/DB-GPT.git
-# Result:  DataAgentSecurity_Test/DB-GPT/
+# Result:  DataAgentSecurity/DB-GPT/
 ```
 
 The runner discovers DB-GPT via `--dbgpt-root` (default: `./DB-GPT`).
@@ -219,7 +219,7 @@ LAMBDA, DeepAnalyze (DA), and DataInterpreter (the analyst role inside
 MetaGPT) follow **the exact same flow** as DB-GPT — only the runner
 differs. For each:
 
-1. Clone the system under `DataAgentSecurity_Test/<SYSTEM>/` (or set up
+1. Clone the system under `DataAgentSecurity/<SYSTEM>/` (or set up
    its API server / vLLM endpoint per its own README).
 2. Write or adapt a runner mirroring `scripts/run_dbgpt_attacks.py` —
    replace the `run_dbgpt_session` call site with the system's session

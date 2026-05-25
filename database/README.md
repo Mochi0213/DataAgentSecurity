@@ -26,7 +26,7 @@ After downloading, place the files directly under this directory:
 ### Option A — `huggingface-cli` (recommended)
 
 All commands below assume your shell is in the **repository root**
-(`DataAgentSecurity_Test/`); paths are relative.
+(`DataAgentSecurity/`); paths are relative.
 
 ```bash
 # install once: pip install -U "huggingface_hub[cli]"
