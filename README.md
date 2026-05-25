@@ -1,4 +1,4 @@
-# DataAgentSecurity_Test
+# DataAgentSecurity
 
 Reproducibility package for the data-agent security evaluation used in our
 submission paper *"Can You Trust Your Data Agent? Security Threats in
@@ -21,51 +21,44 @@ each (350 total attacks):
 
 ```
 DataAgentSecurity_Test/
-├── README.md                      ← this file
+├── README.md                      
 │
-├── database/                      ← 27 dacomp-*.sqlite databases
-│   ├── README.md                  ← download instructions
-│   └── DOWNLOAD_LINK.txt          ← Hugging Face link
+├── database/                      ← dacomp-*.sqlite databases
+│   ├── README.md                  
+│   └── DOWNLOAD_LINK.txt         
 │
-├── env/                           ← Docker sandbox + secrets
+├── env/                           
 │   ├── README.md
-│   ├── Dockerfile.dataagent       ← python:3.11-slim + pandas/numpy/scipy/…
+│   ├── Dockerfile.dataagent       
 │   └── YOUR_OPENROUTER_KEY.txt    ← paste your OpenRouter key here
 │
 ├── test_case/                     ← all 350 attack manifests
 │   ├── Hijack/
-│   │   ├── manifests/             ← 150 YAMLs  (6 techniques × 25 DBs+tpls)
-│   │   ├── templates/             ← 6 per-technique authoring docs
-│   │   └── databases/             ← (reserved — symlink targets if needed)
+│   │   ├── manifests/             ← 150 Hijack YAMLs
+│   │   └── templates/             ← Hijack templates
 │   │
 │   ├── Mislead/
-│   │   ├── manifests/             ← 100 YAMLs  (T4.1, T4.2, T5.1, T5.2)
-│   │   ├── templates/             ← 4 per-technique authoring docs
-│   │   ├── aux_files/             ← per-test_id dir of side files
-│   │   │                              (rule_config.json, notes.txt, …)
-│   │   │                              used by T4.2 and T5.1
-│   │   └── databases/             ← (reserved)
+│   │   ├── manifests/             ← 100 Mislead YAMLs
+│   │   ├── templates/             
+│   │   └── aux_files/                                      
 │   │
 │   └── Drain/
-│       ├── manifests/             ← 100 YAMLs  (T6.1, T6.2, T7.1, T7.2)
-│       ├── templates/             ← 4 per-technique authoring docs
-│       └── benign_baselines/      ← 14 calibrated benign-workload YAMLs
-│                                     (one per DB; consumed by drain_judge
-│                                     to obtain c_ref)
+│       ├── manifests/             ← 100 Drain YAMLs
+│       ├── templates/             
+│       └── benign_baselines/      ← 14 benign-workload YAMLs
+│                                     
+│                                     
 │
-├── scripts/                       ← runner + judges + (vendored) DB-GPT driver
-│   ├── run_dbgpt_attacks.py       ← drives 350 manifests through DB-GPT
-│   ├── hijack_judge.py            ← T1/T2/T3 ASR judge
-│   ├── mislead_judge.py           ← T4/T5 ASR judge (RE-only)
-│   ├── drain_judge.py             ← T6/T7 ASR judge
-│   ├── dbgpt_driver/              ← (set up in step 2) dbgpt_session.py +
-│   │                                 llm_instrumentation.py – the canonical
-│   │                                 OpenRouter-pinned session driver
-│   └── run_logs/                  ← per-run CSV summary (auto-created)
+├── scripts/                       
+│   ├── run_dbgpt_attacks.py       ← Drives 350 Hijack + Mislead + Drain manifests through DB-GPT
+│   ├── hijack_judge.py            ← Hijack ASR judge
+│   ├── mislead_judge.py           ← Mislead ASR judge
+│   ├── drain_judge.py             ← Drain ASR judge
+│   └── run_logs/                  ← per-run CSV summary
 │
-├── DB-GPT/                        ← (set up in step 2) upstream DB-GPT clone
+├── DB-GPT/                        ← Set up in step 2 upstream DB-GPT clone
 │
-└── transcripts/                   ← (auto-created when the runner first runs)
+└── transcripts/                   ← Auto-created when the runner first runs
     ├── Hijack/<Technique>/*.json
     ├── Mislead/<Technique>/*.json
     └── Drain/<Technique>/*.json
