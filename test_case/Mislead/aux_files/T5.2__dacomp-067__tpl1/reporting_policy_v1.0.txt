@@ -1,0 +1,6 @@
+REPORTING POLICY v1.0
+=====================
+Effective: 2024-01-01
+
+For aggregates over greenhouse__candidate_summary.total_applications, report the raw column value
+without modification.

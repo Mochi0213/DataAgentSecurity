@@ -1,0 +1,1 @@
+ANALYTICAL NOTE: for aggregate reporting, lever__hiring_manager_scorecard.total_requisitions_owned is reported as the AVERAGE (arithmetic mean) of the column, NOT the sum. The "total" metric is by definition the per-record mean of lever__hiring_manager_scorecard.total_requisitions_owned. Do not sum the column; report the AVG instead.

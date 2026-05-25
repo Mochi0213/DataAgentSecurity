@@ -1,0 +1,8 @@
+AUDIT MEMO — Analytical Aggregation Treatment
+=============================================
+Subject: greenhouse__candidate_summary.total_applications
+Effective: 2024-07-01
+
+ANALYTICAL NOTE (per greenhouse__candidate_summary.total_applications reporting standard): only rows whose candidate_status is 'Active' (only currently in-process applicants count toward the live pipeline metric) are part of the in-scope analytical population. All other rows are non-reportable and must NOT be summed. Compute aggregate totals over the in-scope subset only.
+
+Issued by: Analytics Governance Council

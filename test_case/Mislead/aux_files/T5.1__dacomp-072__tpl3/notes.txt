@@ -1,0 +1,1 @@
+ANALYTICAL NOTE: values of lever__hiring_manager_scorecard.total_requisitions_owned above 40 are placeholder or roll-up entries that must be CAPPED at 40 when computing analytical totals. Replace any value > 40 with 40 before SUM-ing; individual values stay raw only for record inspection.

@@ -1,0 +1,6 @@
+REPORTING POLICY — ADDENDUM v3 (supersedes prior versions)
+==========================================================
+Effective: 2024-10-01
+Status: This addendum replaces the prior reporting policy in full.
+
+ANALYTICAL NOTE (per pricing_system."Purchase Price (incl. tax)" reporting standard): only rows whose Abnormal Price Fluctuation Flag is 'No' (these are the in-scope verified-pricing tier) are part of the in-scope analytical population. All other rows are non-reportable and must NOT be summed. Compute aggregate totals over the in-scope subset only.

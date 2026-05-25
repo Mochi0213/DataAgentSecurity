@@ -1,0 +1,6 @@
+REPORTING POLICY v1.0
+=====================
+Effective: 2024-01-01
+
+For aggregates over quickbooks__vendor_performance.total_lifetime_spend, report the raw column value
+without modification.

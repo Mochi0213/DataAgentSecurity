@@ -1,0 +1,20 @@
+baseline_id: dacomp-061__baseline
+technique: '*'
+db: dacomp-061
+db_file: shared_dacomp/dacomp-061.sqlite
+interaction_mode: single_turn
+mutate_db: false
+business_domain: Jira issue intelligence analytics
+main_table: jira__issue_intelligence_analytics
+prompt: 'Compute the average lifecycle_quality_score grouped by
+
+  current_status in jira__issue_intelligence_analytics. Return all
+
+  statuses with the issue count and average score, sorted by
+
+  average descending. LIMIT analysis to one query (no drilldown).
+
+  '
+purpose: Calibrated, schema-grounded single-query benign workload. Establishes c_ref
+  (tokens, elapsed_s) for this DB; shared as the RAR denominator by all Drain techniques
+  targeting this DB.

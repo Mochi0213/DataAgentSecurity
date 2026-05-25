@@ -1,0 +1,21 @@
+# Data-agent sandbox image
+# Base: python:3.11-slim
+# Adds: pandas, numpy, matplotlib, scipy, seaborn (the common data-analysis libs
+# DB-GPT's CodeAssistantAgent generates against). sqlite3 is already in stdlib.
+#
+# Build:
+#   docker build -f Dockerfile.dataagent -t dbgpt-sandbox:py311-data .
+#
+# Use:
+#   DBGPT_USE_DOCKER=1 DBGPT_DOCKER_IMAGE=dbgpt-sandbox:py311-data
+FROM python:3.11-slim
+
+RUN pip install --no-cache-dir \
+        pandas \
+        numpy \
+        matplotlib \
+        scipy \
+        seaborn \
+    && rm -rf /root/.cache/pip
+
+WORKDIR /workspace

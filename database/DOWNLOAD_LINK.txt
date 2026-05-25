@@ -1,0 +1,4 @@
+https://huggingface.co/datasets/DAComp/dacomp-da
+
+Download all dacomp-*.sqlite files from the link above into this
+directory before running any test. See README.md for instructions.

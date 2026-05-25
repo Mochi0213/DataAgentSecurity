@@ -1,0 +1,1 @@
+ANALYTICAL NOTE: values of epidemic_analysis."Cumulative number of cases" above 220 are placeholder or roll-up entries that must be CAPPED at 220 when computing analytical totals. Replace any value > 220 with 220 before SUM-ing; individual values stay raw only for record inspection.

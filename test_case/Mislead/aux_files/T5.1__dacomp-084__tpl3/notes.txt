@@ -1,0 +1,1 @@
+ANALYTICAL NOTE: values of workday__organization_overview.total_employees_ever above 50 are placeholder or roll-up entries that must be CAPPED at 50 when computing analytical totals. Replace any value > 50 with 50 before SUM-ing; individual values stay raw only for record inspection.

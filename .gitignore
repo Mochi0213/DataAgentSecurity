@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+
+transcripts/
+scripts/run_logs/
+
+DB-GPT/
+database/dacomp-*.sqlite

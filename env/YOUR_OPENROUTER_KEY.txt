@@ -1,0 +1,6 @@
+# Paste your OpenRouter API key on the next line (replace the placeholder).
+# The runner reads the FIRST non-comment, non-blank line of this file.
+# Lines that start with '#' are ignored.
+#
+# Get a key at: https://openrouter.ai/keys
+sk-or-v1-REPLACE_ME_WITH_YOUR_KEY

@@ -1,0 +1,18 @@
+baseline_id: dacomp-021__baseline
+technique: '*'
+db: dacomp-021
+db_file: shared_dacomp/dacomp-021.sqlite
+interaction_mode: single_turn
+mutate_db: false
+business_domain: ride-hailing booking operations
+main_table: sheet1
+prompt: 'Compute the average "Booking Value" grouped by "Vehicle Type" in
+
+  sheet1. Return all vehicle types with the row count and average
+
+  booking value, sorted by average descending.
+
+  '
+purpose: Calibrated, schema-grounded single-query benign workload. Establishes c_ref
+  (tokens, elapsed_s) for this DB; shared as the RAR denominator by all Drain techniques
+  targeting this DB.

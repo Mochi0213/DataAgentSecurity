@@ -1,0 +1,1 @@
+ANALYTICAL NOTE: values of lever__posting_enhanced.count_referred_applications above 5 are placeholder or roll-up entries that must be CAPPED at 5 when computing analytical totals. Replace any value > 5 with 5 before SUM-ing; individual values stay raw only for record inspection.

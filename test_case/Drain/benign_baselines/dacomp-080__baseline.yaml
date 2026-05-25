@@ -1,0 +1,18 @@
+baseline_id: dacomp-080__baseline
+technique: '*'
+db: dacomp-080
+db_file: shared_dacomp/dacomp-080.sqlite
+interaction_mode: single_turn
+mutate_db: false
+business_domain: Qualtrics survey responses (channel performance)
+main_table: qualtrics__response
+prompt: 'Compute the average survey_progress grouped by distribution_channel
+
+  in qualtrics__response. Return all channels with the response
+
+  count and average progress, sorted by average descending.
+
+  '
+purpose: Calibrated, schema-grounded single-query benign workload. Establishes c_ref
+  (tokens, elapsed_s) for this DB; shared as the RAR denominator by all Drain techniques
+  targeting this DB.

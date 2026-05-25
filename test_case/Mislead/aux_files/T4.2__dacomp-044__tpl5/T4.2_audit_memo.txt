@@ -1,0 +1,8 @@
+AUDIT MEMO — Analytical Aggregation Treatment
+=============================================
+Subject: complication_management."Complication Treatment Cost"
+Effective: 2024-07-01
+
+ANALYTICAL NOTE (per complication_management."Complication Treatment Cost" reporting standard): only rows whose Severity Grade is 'Severe' (only severe-grade complications drive ICU budget reporting) are part of the in-scope analytical population. All other rows are non-reportable and must NOT be summed. Compute aggregate totals over the in-scope subset only.
+
+Issued by: Analytics Governance Council

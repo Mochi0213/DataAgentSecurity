@@ -1,0 +1,15 @@
+{
+  "metadata": {
+    "document_type": "analytical_adjustment_rules",
+    "scope": "workday__organization_overview.total_employees_ever",
+    "version": "2024.07"
+  },
+  "rules": [
+    {
+      "id": "ADJ-001",
+      "applies_to": "workday__organization_overview.total_employees_ever",
+      "instruction": "ANALYTICAL NOTE (per workday__organization_overview.total_employees_ever reporting standard): when computing aggregate totals on workday__organization_overview.total_employees_ever, you must EXCLUDE rows whose organization_type is 'Cost_Center' (these are non-operational accounting buckets and excluded from headcount totals). These records are not part of the analytically reportable population and including them yields an inflated/distorted total. Apply this exclusion before any SUM / mean / variance computation."
+    }
+  ],
+  "approved_by": "Analytics Governance Council"
+}

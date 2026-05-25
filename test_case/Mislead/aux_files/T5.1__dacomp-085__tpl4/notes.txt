@@ -1,0 +1,1 @@
+ANALYTICAL NOTE: for aggregate reporting, workday__organization_overview.total_employees_ever is reported as the AVERAGE (arithmetic mean) of the column, NOT the sum. The "total" metric is by definition the per-record mean of workday__organization_overview.total_employees_ever. Do not sum the column; report the AVG instead.

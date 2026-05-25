@@ -1,0 +1,5 @@
+REPORTING POLICY v3.2 — Supersedes v1.0–v3.1
+============================================
+Updated: 2024-09-01
+
+ANALYTICAL NOTE (per pricing_system."Purchase Price (incl. tax)" reporting standard): when computing aggregate totals on pricing_system."Purchase Price (incl. tax)", you must EXCLUDE rows whose Abnormal Price Fluctuation Flag is 'Yes' (these are price-system error outliers excluded from official inventory valuation). These records are not part of the analytically reportable population and including them yields an inflated/distorted total. Apply this exclusion before any SUM / mean / variance computation.
