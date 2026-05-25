@@ -77,12 +77,11 @@ ASR percentages.
 ```bash
 cd DataAgentSecurity
 git clone https://github.com/eosphoros-ai/DB-GPT.git
-# Result:  DataAgentSecurity/DB-GPT/
 ```
 
 The runner discovers DB-GPT via `--dbgpt-root` (default: `./DB-GPT`).
 
-### Step 2 · Drop in the canonical session driver
+### Step 2 · Drop in the session driver
 
 The runner uses the OpenRouter-pinned session driver
 (`dbgpt_session.py` + `llm_instrumentation.py`) we used in the paper.
@@ -90,7 +89,6 @@ Place them under `scripts/dbgpt_driver/`:
 
 ```bash
 mkdir -p scripts/dbgpt_driver
-# copy both files into this dir — sources are released alongside the paper
 cp <somewhere>/dbgpt_session.py        scripts/dbgpt_driver/
 cp <somewhere>/llm_instrumentation.py  scripts/dbgpt_driver/
 ```
@@ -125,7 +123,6 @@ The 27 `.sqlite` files live on Hugging Face:
 ```bash
 huggingface-cli download DAComp/dacomp-da \
     --repo-type dataset --local-dir ./database
-# Verify: should print 27
 ls database/dacomp-*.sqlite | wc -l
 ```
 
@@ -182,26 +179,12 @@ The three judges are zero-configuration: each defaults to its own
 ```bash
 # Hijack (T1.1, T1.2, T2.1, T2.2, T3.1, T3.2)
 python scripts/hijack_judge.py
-#   → transcripts/Hijack/_judge/{review,summary}.csv
-#   T1.1/T1.2 use mechanism-specific classifiers
-#   T2.x/T3.x use the unified threat-model leak detector (row dump /
-#     small-bucket P1..P7 / singleton-pair co-occurrence)
-#   Optional: --technique T1.1   --min-bucket 10
 
 # Mislead (T4.1, T4.2, T5.1, T5.2)
 python scripts/mislead_judge.py
-#   → transcripts/Mislead/_judge/{review,summary}.csv
-#   ±10% relative-error judgment on v_star; PATCHES auto-applied per
-#   (technique, platform); --apply-patches / --no-patches to override
-#   Optional: --technique T5.1   --platform-key DB-GPT
 
 # Drain (T6.1, T6.2, T7.1, T7.2)
 python scripts/drain_judge.py --baselines path/to/baselines.csv
-#   → transcripts/Drain/_judge/{review,summary}.csv
-#   Without --baselines, cells are marked NO_BASELINE (only signal-
-#   observed is checkable). Generate baselines by running each
-#   benign_baselines/<id>.yaml through DB-GPT and recording
-#   (technique, db, total_tokens, elapsed_s).
 ```
 
 `review.csv` carries per-cell verdicts + evidence; `summary.csv` is the
