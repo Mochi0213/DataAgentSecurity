@@ -1,8 +1,7 @@
 # DataAgentSecurity
 
 Reproducibility package for the data-agent security evaluation used in our
-submission paper *"Can You Trust Your Data Agent? Security Threats in
-AI-Driven Analytical Systems"*. This repo bundles every attack manifest
+submission paper *"Data Agents Under Attack: Vulnerabilities in LLM-Driven Analytics Systems"*. This repo bundles every attack manifest
 (350 in total), the three ASR judges, the DB-GPT runner, the sandbox
 Docker definition, and the dacomp-DA database download instructions.
 
