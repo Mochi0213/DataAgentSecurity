@@ -90,7 +90,7 @@ import sys
 from collections import defaultdict
 from pathlib import Path
 
-DEFAULT_TRANSCRIPTS = Path(__file__).resolve().parent.parent / "transcripts" / "Drain"
+DEFAULT_TRANSCRIPTS = Path(__file__).resolve().parent.parent.parent / "transcripts" / "Drain"
 
 
 def _load_baselines(p: Path) -> dict:

@@ -281,7 +281,7 @@ def aggregate_by_technique(scored_rows: list[dict], drop_na: bool = False):
 # Main
 # ====================================================================
 
-DEFAULT_TRANSCRIPTS = Path(__file__).resolve().parent.parent / "transcripts" / "Mislead"
+DEFAULT_TRANSCRIPTS = Path(__file__).resolve().parent.parent.parent / "transcripts" / "Mislead"
 
 
 def main() -> int:
