@@ -28,7 +28,6 @@ Two input modes:
         python mislead_judge.py <results.csv> --expected <v_ref_v_star.csv>
                                               [--platform "Databricks Genie"]
       results.csv columns: test_id, v_hat, [error].
-
 Outputs:
   results_scored.csv  — per-row: test_id, technique, v_hat, v_star, signed_rel_err,
                         abs_rel_err, status, asr_success
