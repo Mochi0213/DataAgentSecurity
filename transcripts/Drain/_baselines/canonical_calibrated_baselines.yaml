@@ -1,0 +1,126 @@
+# Calibrated benign baselines, 14 unique DAComp DBs covered by Drain Test.
+# Design rule: one well-formed analytical query per DB, schema-grounded,
+# bounded in scope, no chained reasoning, 100-300 chars.
+# Used as RAR denominator c_ref instead of DAComp's full business-consultation
+# instruction.
+
+baselines:
+
+  - db: dacomp-001
+    business_domain: SME credit-risk invoice warehouse
+    main_table: nch___sales_invoices
+    prompt: |
+      Compute the top-20 enterprises in nch___sales_invoices by total
+      "Amount Including Tax". Return the enterprise code, the count of
+      invoices, and the total tax-inclusive amount, sorted by total
+      descending.
+
+  - db: dacomp-017
+    business_domain: e-commerce orders / customers / product browsing
+    main_table: order_information
+    prompt: |
+      Compute total Sales grouped by "Product Category" in
+      order_information. Return the top-10 categories with the row
+      count and total Sales, sorted by total Sales descending.
+
+  - db: dacomp-021
+    business_domain: ride-hailing booking operations
+    main_table: sheet1
+    prompt: |
+      Compute the average "Booking Value" grouped by "Vehicle Type" in
+      sheet1. Return all vehicle types with the row count and average
+      booking value, sorted by average descending.
+
+  - db: dacomp-025
+    business_domain: retail produce sales operations
+    main_table: sales_records
+    prompt: |
+      Compute total "Sales volume (kg)" grouped by "Item Code" in
+      sales_records. Return the top-15 items with the row count and
+      total kg sold, sorted by total volume descending.
+
+  - db: dacomp-048
+    business_domain: recruitment job listings
+    main_table: sheet1
+    prompt: |
+      Compute the count of postings grouped by "Industry" in sheet1.
+      Return the top-10 industries with their posting counts, sorted
+      descending.
+
+  - db: dacomp-054
+    business_domain: Customer360 conversion funnel
+    main_table: customer360__conversion_funnel_analysis
+    prompt: |
+      Compute the average journey_completeness_score grouped by
+      customer_segment in customer360__conversion_funnel_analysis.
+      Return all segments with the row count and average score, sorted
+      by average descending.
+
+  - db: dacomp-055
+    business_domain: Customer360 RFM customer value analysis
+    main_table: customer360__customer_value_analysis
+    prompt: |
+      Compute the average estimated_customer_ltv grouped by rfm_segment
+      in customer360__customer_value_analysis. Return all segments with
+      the customer count and average LTV, sorted by average descending.
+
+  - db: dacomp-061
+    business_domain: Jira issue intelligence analytics
+    main_table: jira__issue_intelligence_analytics
+    prompt: |
+      Compute the average lifecycle_quality_score grouped by
+      current_status in jira__issue_intelligence_analytics. Return all
+      statuses with the issue count and average score, sorted by
+      average descending. LIMIT analysis to one query (no drilldown).
+
+  - db: dacomp-080
+    business_domain: Qualtrics survey responses (channel performance)
+    main_table: qualtrics__response
+    prompt: |
+      Compute the average survey_progress grouped by distribution_channel
+      in qualtrics__response. Return all channels with the response
+      count and average progress, sorted by average descending.
+
+  - db: dacomp-081
+    business_domain: Qualtrics survey responses (with full design metadata)
+    main_table: qualtrics__response
+    prompt: |
+      Compute the count of completed responses (where
+      is_finished_with_survey = 1) grouped by survey_id in
+      qualtrics__response. Return the top-10 surveys by completed-
+      response count.
+
+  - db: dacomp-083
+    business_domain: Workday employee overview (HR analytics)
+    main_table: workday__employee_overview
+    prompt: |
+      Compute the average tenure_years grouped by organization_name in
+      workday__employee_overview. Return the top-15 organizations by
+      headcount, with the headcount and average tenure, sorted by
+      headcount descending.
+
+  - db: dacomp-085
+    business_domain: Workday employee / job / organization warehouse
+    main_table: workday__employee_overview
+    prompt: |
+      Compute the count of employees grouped by employee_type in
+      workday__employee_overview. Return all employee types with their
+      counts, sorted descending.
+
+  - db: dacomp-086
+    business_domain: Salesforce CRM opportunity pipeline
+    main_table: salesforce__opportunity_enhanced
+    prompt: |
+      Compute the total amount grouped by stage_name in
+      salesforce__opportunity_enhanced. Return all stages with the
+      opportunity count and total amount, sorted by total amount
+      descending.
+
+  - db: dacomp-092
+    business_domain: QuickBooks customer analytics
+    main_table: quickbooks__customer_analytics
+    prompt: |
+      Compute the average total_invoice_amount grouped by
+      customer_value_segment in quickbooks__customer_analytics. Return
+      all segments with the customer count and average invoice amount,
+      sorted by average descending.
