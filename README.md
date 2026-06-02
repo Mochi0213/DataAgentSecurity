@@ -48,24 +48,52 @@ DataAgentSecurity/
 │                                     
 │                                     
 │
-├── scripts/                       
+├── scripts/
 │   ├── run_dbgpt_attacks.py       ← Drives 350 Hijack + Mislead + Drain manifests through DB-GPT
-│   ├── hijack_judge.py            ← Hijack ASR judge
-│   ├── mislead_judge.py           ← Mislead ASR judge
-│   ├── drain_judge.py             ← Drain ASR judge
-│   └── run_logs/                  ← per-run CSV summary
+│   │
+│   ├── judge_rules/               ← ASR judges used to score saved transcripts
+│   │   ├── hijack_judge.py        ← Hijack ASR judge
+│   │   ├── mislead_judge.py       ← Mislead ASR judge
+│   │   └── drain_judge.py         ← Drain ASR judge
+│   │
+│   ├── plotting/                  ← scripts for regenerating paper figures
+│   │   ├── fig2(b).py
+│   │   ├── fig3.py
+│   │   ├── fig4.py
+│   │   └── fig5.py
+│   │
+│   └── run_logs/                  ← per-run CSV summary, created by the runner
 │
 ├── DB-GPT/                        ← Set up in step 2 upstream DB-GPT clone
 │
-└── transcripts/                   ← Auto-created when the runner first runs
-    ├── Hijack/<Technique>/*.json
-    ├── Mislead/<Technique>/*.json
-    └── Drain/<Technique>/*.json
+└── transcripts/                   ← Checked-in transcripts for reproducing ASR
+    ├── Hijack/
+    │   ├── T1.1/*.json
+    │   ├── T1.2/*.json
+    │   ├── T2.1/*.json
+    │   ├── T2.2/*.json
+    │   ├── T3.1/*.json
+    │   └── T3.2/*.json
+    │
+    ├── Mislead/
+    │   ├── T4.1/*.json
+    │   ├── T4.2/*.json
+    │   ├── T5.1/*.json
+    │   └── T5.2/*.json
+    │
+    └── Drain/
+        ├── T6.1/*.json
+        ├── T6.2/*.json
+        ├── T7.1/*.json
+        ├── T7.2/*.json
+        └── _baselines/            ← token/time baselines for Drain
 ```
 
 Each cell in the master table corresponds to **25 transcript JSONs** under
 `transcripts/<Group>/<Technique>/`. The judges aggregate those into per-cell
-ASR percentages.
+ASR percentages. Because the transcript JSONs are included in this repository,
+the reported ASR results can be reproduced directly from `transcripts/` and
+`scripts/judge_rules/` without rerunning any data-agent system.
 
 ---
 
@@ -167,23 +195,31 @@ transcripts/<Group>/<Technique>/<test_id>.json    – 350 JSON transcripts
 scripts/run_logs/run_<TIMESTAMP>/summary.csv      – one row per manifest
 ```
 
+If you only want to reproduce the paper ASR numbers, you can skip the full
+DB-GPT run and use the checked-in transcripts directly with the judges in
+Section 3.
+
 ---
 
 ## 3 · Running the ASR judges
 
-The three judges are zero-configuration: each defaults to its own
-`transcripts/<Group>/` sub-tree, walks every JSON underneath, and writes
-`<Group>/_judge/{review.csv, summary.csv}` next to the transcripts.
+The checked-in `transcripts/` directory is sufficient to reproduce the ASR
+results. The three judges are zero-configuration for Hijack and Mislead: each
+defaults to its own `transcripts/<Group>/` sub-tree, walks every JSON
+underneath, and writes `<Group>/_judge/{review.csv, summary.csv}` next to the
+transcripts. Drain additionally uses the baseline CSVs under
+`transcripts/Drain/_baselines/`.
 
 ```bash
 # Hijack (T1.1, T1.2, T2.1, T2.2, T3.1, T3.2)
-python scripts/hijack_judge.py
+python scripts/judge_rules/hijack_judge.py
 
 # Mislead (T4.1, T4.2, T5.1, T5.2)
-python scripts/mislead_judge.py
+python scripts/judge_rules/mislead_judge.py
 
 # Drain (T6.1, T6.2, T7.1, T7.2)
-python scripts/drain_judge.py --baselines path/to/baselines.csv
+python scripts/judge_rules/drain_judge.py \
+    --baselines transcripts/Drain/_baselines/DB-GPT__calibrated_baselines.csv
 ```
 
 `review.csv` carries per-cell verdicts + evidence; `summary.csv` is the
