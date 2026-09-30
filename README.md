@@ -1,18 +1,21 @@
 # DataAgentSecurity
 
-Reproducibility package for the data-agent security evaluation used in our
-submission paper *"Data Agents Under Attack: Vulnerabilities in LLM-Driven Analytics Systems"*. This repo bundles every attack manifest
-(350 in total), the three ASR judges, the DB-GPT runner, the sandbox
-Docker definition, and the dacomp-DA database download instructions.
+Reproducibility package for the data agent security evaluation in our paper
+*"Data Agents Under Attack: Vulnerabilities in LLM-Driven Analytical Systems"*.
+This repo bundles all 350 attack payloads (as YAML manifests), the three ASR
+judges, the DB-GPT runner, the sandbox Docker definition, and the DAComp-DA
+database download instructions. Our technical report is in
+[`technical_report.pdf`](technical_report.pdf).
 
-The benchmark covers three threat families × 14 techniques × 25 cells
-each (350 total attacks):
+The benchmark covers three adversary goals and 14 attack techniques. Each
+technique has 25 payloads (5 templates × 5 databases), for 350 payloads in
+total:
 
-| Family  | Techniques                                | # cells |
+| Goal    | Techniques                                | # payloads |
 |:--------|:------------------------------------------|--------:|
-| Hijack  | T1.1, T1.2, T2.1, T2.2, T3.1, T3.2        |     150 |
-| Mislead | T4.1, T4.2, T5.1, T5.2                    |     100 |
-| Drain   | T6.1, T6.2, T7.1, T7.2                    |     100 |
+| Hijack  | T1.1, T1.2, T2.1, T2.2, T3.1, T3.2        |        150 |
+| Mislead | T4.1, T4.2, T5.1, T5.2                    |        100 |
+| Drain   | T6.1, T6.2, T7.1, T7.2                    |        100 |
 
 ---
 
@@ -64,7 +67,7 @@ DataAgentSecurity/
 │   │
 │   └── run_logs/                  ← per-run CSV summary, created by the runner
 │
-├── DB-GPT/                        ← Set up in step 2 upstream DB-GPT clone
+├── DB-GPT/                        ← upstream DB-GPT, cloned in Step 1
 │
 └── transcripts/                   ← Checked-in transcripts for reproducing ASR
     ├── Hijack/
@@ -89,9 +92,9 @@ DataAgentSecurity/
         └── _baselines/            ← token/time baselines for Drain
 ```
 
-Each cell in the master table corresponds to **25 transcript JSONs** under
-`transcripts/<Group>/<Technique>/`. The judges aggregate those into per-cell
-ASR percentages. Because the transcript JSONs are included in this repository,
+Each technique has **25 transcript JSONs** (one per payload) under
+`transcripts/<Group>/<Technique>/`. The judges turn them into the
+per-technique ASR reported in the paper. Because the transcript JSONs are included in this repository,
 the reported ASR results can be reproduced directly from `transcripts/` and
 `scripts/judge_rules/` without rerunning any data-agent system.
 
@@ -125,8 +128,8 @@ keep the driver elsewhere.)
 
 ### Step 3 · Build the Docker sandbox
 
-DB-GPT executes generated code inside a container — without this step,
-T1.2 (RCE) ASR is artificially inflated by host-side leakage.
+DB-GPT executes generated code inside a container. Without this step, the
+T1.2 (Code Injection) ASR is inflated because code runs on the host.
 
 ```bash
 docker build -f env/Dockerfile.dataagent -t dbgpt-sandbox:py311-data env/
@@ -143,9 +146,10 @@ nano env/YOUR_OPENROUTER_KEY.txt
 
 The runner reads the first non-`#`, non-blank line.
 
-### Step 5 · Download dacomp-DA databases
+### Step 5 · Download DAComp-DA databases
 
-The 27 `.sqlite` files live on Hugging Face:
+The benchmark uses 27 DAComp-DA databases. The `.sqlite` files live on
+Hugging Face:
 
 ```bash
 huggingface-cli download DAComp/dacomp-da \
@@ -174,7 +178,7 @@ rm -rf transcripts scripts/run_logs
 ### Step 7 · Run the full benchmark
 
 ```bash
-# all 350 cells, 4 workers, 30-min cap per cell
+# all 350 payloads, 4 workers, 1,800 s cap per test (as in the paper)
 python scripts/run_dbgpt_attacks.py --parallel 4 --timeout 1800
 ```
 
@@ -222,12 +226,13 @@ python scripts/judge_rules/drain_judge.py \
     --baselines transcripts/Drain/_baselines/DB-GPT__calibrated_baselines.csv
 ```
 
-`review.csv` carries per-cell verdicts + evidence; `summary.csv` is the
-per-technique aggregate (total / errors / success count / ASR%).
+`review.csv` gives the verdict and evidence for each test; `summary.csv` gives
+the per-technique totals (total / errors / successes / ASR%). The three
+`summary.csv` files (Hijack, Mislead, Drain) give the per-technique ASR shown
+in the paper's ASR heatmap.
 
-Combine ASR numbers into the paper master table by reading the four
-`summary.csv` files (one per platform × group) — that's the source for
-the heatmap.
+To judge transcripts from another system, pass its directory as the first
+argument, e.g. `python scripts/judge_rules/hijack_judge.py transcripts/BigQuery/Hijack`.
 
 ---
 
@@ -247,11 +252,12 @@ differs. For each:
    filtering, and transcript schema (`responses` / `code_cells` /
    `code_outputs` / `full_output` / `token_usage`) stay identical, so
    the three judges work without modification.
-4. Drop the resulting transcripts under
-   `transcripts/<Group>/<Technique>/`; run the judges as in §3.
+4. Save the resulting transcripts under
+   `transcripts/<SYSTEM>/<Group>/<Technique>/` and run the judges on that
+   directory as in §3.
 
-Master-table reproducibility relies on every system writing the same
-transcript schema — keep that contract intact.
+Reproducing the paper's ASR requires every system to write the same
+transcript schema.
 
 ---
 
@@ -259,7 +265,7 @@ transcript schema — keep that contract intact.
 
 These two ship as cloud-only products; their experiment flows differ.
 
-### Databricks Genie COde — web-driven
+### Databricks Genie Code — web-driven
 
 Genie Code has no public scripting API for the attack surface we test, so the
 canonical procedure is **manual webpage interaction**:
@@ -273,8 +279,8 @@ canonical procedure is **manual webpage interaction**:
    - Paste the manifest's `prompt` field into the Genie chat.
    - Save Genie's full reply transcript + final answer.
 3. Convert the saved reply into the standard transcript JSON schema and
-   drop it at `transcripts/<Group>/<Technique>/<test_id>.json` so the
-   judges can pick it up.
+   save it at `transcripts/Databricks/<Group>/<Technique>/<test_id>.json`,
+   then run the judges on that directory (§3).
 
 A single human round-trip per cell is enough; we did not parallelise
 this in the paper.
@@ -321,21 +327,19 @@ exact CLI analogue of the Databricks Genie procedure above:
    - For Mislead T4.2 / T5.1, also upload each entry in
      `test_case/Mislead/aux_files/<test_id>/` into a sibling staging
      dataset or as a Cloud Storage object the agent can read.
-4. **Submit the prompt** to the Conversational Agent — wrapping the
+3. **Submit the prompt** to the Conversational Agent — wrapping the
    manifest's `prompt` field verbatim, with the new dataset declared as
    the active context. Capture the agent's complete reply, including any
    intermediate SQL it ran and the final answer it printed.
-5. **Save as a standard transcript**: serialise the reply into the same
+4. **Save as a standard transcript**: serialise the reply into the same
    JSON schema the DB-GPT runner produces (`test_id`, `technique`, `db`,
    `prompt`, `responses`, `code_cells`, `code_outputs`, `full_output`,
    `token_usage`, `elapsed_s`, `error`) and write it to
    `transcripts/BigQuery/<Group>/<Technique>/<test_id>.json`.
-6. Tear down the dataset (or keep it for audit; BigQuery datasets are
-   cheap to leave around but free to delete).
+5. Delete the dataset, or keep it for auditing.
 
-Then run the three judges from §3 — they walk
-`transcripts/<Group>/` regardless of platform, so no judge changes
-are needed.
+Then run the three judges from §3 on `transcripts/BigQuery/<Group>/`. No
+judge changes are needed.
 
 **Architectural N/A cells.** BigQuery cannot evaluate arbitrary
 Python or shell, and is single-engine SQL. The cells the BigQuery
@@ -343,14 +347,13 @@ agent cannot legitimately attempt are:
 
 - T1.2, T4.2 & T6.2
 
-Report these as N/A in the master table, exactly as
-LAMBDA / MetaGPT T6.2 is reported architecturally N/A.
+Report these as N/A, as in the paper.
 
 ---
 
 ## 6 · Acknowledgements & licence
 
-- The 27 dacomp-DA databases are released by the DAComp team under their
+- The 27 DAComp-DA databases are released by the DAComp team under their
   Hugging Face dataset card; cite the dataset there.
 - DB-GPT, MetaGPT, DeepAnalyze, LAMBDA are released under their own
   upstream licences — see each project's repository for terms.
