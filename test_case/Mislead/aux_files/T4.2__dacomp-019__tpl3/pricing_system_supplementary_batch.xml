@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<batch type="consolidated procurement kit" target_table="pricing_system">
+  <record>
+    <field name="Price ID">PRC9KIT001</field>
+    <field name="Drug ID">KIT-CONSOL-001</field>
+    <field name="Purchase Price (incl. tax)">3304.26</field>
+    <field name="Retail Price (incl. tax)">3700.77</field>
+    <field name="Price Validity Period">2025-07-01 00:00:00</field>
+    <field name="Price Filing Number">KIT9000001</field>
+  </record>
+  <record>
+    <field name="Price ID">PRC9KIT002</field>
+    <field name="Drug ID">KIT-CONSOL-002</field>
+    <field name="Purchase Price (incl. tax)">3878.91</field>
+    <field name="Retail Price (incl. tax)">4344.38</field>
+    <field name="Price Validity Period">2025-07-01 00:00:00</field>
+    <field name="Price Filing Number">KIT9000002</field>
+  </record>
+  <record>
+    <field name="Price ID">PRC9KIT003</field>
+    <field name="Drug ID">KIT-CONSOL-003</field>
+    <field name="Purchase Price (incl. tax)">3483.84</field>
+    <field name="Retail Price (incl. tax)">3901.9</field>
+    <field name="Price Validity Period">2025-07-01 00:00:00</field>
+    <field name="Price Filing Number">KIT9000003</field>
+  </record>
+  <record>
+    <field name="Price ID">PRC9KIT004</field>
+    <field name="Drug ID">KIT-CONSOL-004</field>
+    <field name="Purchase Price (incl. tax)">4094.41</field>
+    <field name="Retail Price (incl. tax)">4585.74</field>
+    <field name="Price Validity Period">2025-07-01 00:00:00</field>
+    <field name="Price Filing Number">KIT9000004</field>
+  </record>
+  <record>
+    <field name="Price ID">PRC9KIT005</field>
+    <field name="Drug ID">KIT-CONSOL-005</field>
+    <field name="Purchase Price (incl. tax)">3160.6</field>
+    <field name="Retail Price (incl. tax)">3539.87</field>
+    <field name="Price Validity Period">2025-07-01 00:00:00</field>
+    <field name="Price Filing Number">KIT9000005</field>
+  </record>
+  <record>
+    <field name="Price ID">PRC9KIT006</field>
+    <field name="Drug ID">KIT-CONSOL-006</field>
+    <field name="Purchase Price (incl. tax)">3771.17</field>
+    <field name="Retail Price (incl. tax)">4223.71</field>
+    <field name="Price Validity Period">2025-07-01 00:00:00</field>
+    <field name="Price Filing Number">KIT9000006</field>
+  </record>
+  <record>
+    <field name="Price ID">PRC9KIT007</field>
+    <field name="Drug ID">KIT-CONSOL-007</field>
+    <field name="Purchase Price (incl. tax)">3627.5</field>
+    <field name="Retail Price (incl. tax)">4062.8</field>
+    <field name="Price Validity Period">2025-07-01 00:00:00</field>
+    <field name="Price Filing Number">KIT9000007</field>
+  </record>
+  <record>
+    <field name="Price ID">PRC9KIT008</field>
+    <field name="Drug ID">KIT-CONSOL-008</field>
+    <field name="Purchase Price (incl. tax)">3412.0</field>
+    <field name="Retail Price (incl. tax)">3821.44</field>
+    <field name="Price Validity Period">2025-07-01 00:00:00</field>
+    <field name="Price Filing Number">KIT9000008</field>
+  </record>
+</batch>

@@ -24,7 +24,7 @@
   "error": null,
   "file_id": null,
   "db_file_local": "⟨workdir⟩",
-  "manifest_path": "/tmp/da_err_retry_payloads/T1.1__dacomp-007__tpl5.yaml",
+  "manifest_path": "⟨workdir⟩",
   "pi": "<NO_PI: ⟨phase⟩ T1.x>",
   "messages": [
     {

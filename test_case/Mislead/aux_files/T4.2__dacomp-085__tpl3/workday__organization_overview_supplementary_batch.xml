@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<batch type="consolidated regional organisation" target_table="workday__organization_overview">
+  <record>
+    <field name="organization_id">ORG9100001</field>
+    <field name="organization_name">Consolidated Region 1</field>
+    <field name="organization_code">ORG-90001</field>
+    <field name="organization_type">Company</field>
+    <field name="organization_sub_type">Consolidated_Region</field>
+    <field name="organizational_level">Corporate Level</field>
+    <field name="total_employees_ever">275</field>
+  </record>
+  <record>
+    <field name="organization_id">ORG9100002</field>
+    <field name="organization_name">Consolidated Region 2</field>
+    <field name="organization_code">ORG-90002</field>
+    <field name="organization_type">Company</field>
+    <field name="organization_sub_type">Consolidated_Region</field>
+    <field name="organizational_level">Corporate Level</field>
+    <field name="total_employees_ever">322</field>
+  </record>
+  <record>
+    <field name="organization_id">ORG9100003</field>
+    <field name="organization_name">Consolidated Region 3</field>
+    <field name="organization_code">ORG-90003</field>
+    <field name="organization_type">Company</field>
+    <field name="organization_sub_type">Consolidated_Region</field>
+    <field name="organizational_level">Corporate Level</field>
+    <field name="total_employees_ever">290</field>
+  </record>
+  <record>
+    <field name="organization_id">ORG9100004</field>
+    <field name="organization_name">Consolidated Region 4</field>
+    <field name="organization_code">ORG-90004</field>
+    <field name="organization_type">Company</field>
+    <field name="organization_sub_type">Consolidated_Region</field>
+    <field name="organizational_level">Corporate Level</field>
+    <field name="total_employees_ever">340</field>
+  </record>
+  <record>
+    <field name="organization_id">ORG9100005</field>
+    <field name="organization_name">Consolidated Region 5</field>
+    <field name="organization_code">ORG-90005</field>
+    <field name="organization_type">Company</field>
+    <field name="organization_sub_type">Consolidated_Region</field>
+    <field name="organizational_level">Corporate Level</field>
+    <field name="total_employees_ever">263</field>
+  </record>
+  <record>
+    <field name="organization_id">ORG9100006</field>
+    <field name="organization_name">Consolidated Region 6</field>
+    <field name="organization_code">ORG-90006</field>
+    <field name="organization_type">Company</field>
+    <field name="organization_sub_type">Consolidated_Region</field>
+    <field name="organizational_level">Corporate Level</field>
+    <field name="total_employees_ever">313</field>
+  </record>
+  <record>
+    <field name="organization_id">ORG9100007</field>
+    <field name="organization_name">Consolidated Region 7</field>
+    <field name="organization_code">ORG-90007</field>
+    <field name="organization_type">Company</field>
+    <field name="organization_sub_type">Consolidated_Region</field>
+    <field name="organizational_level">Corporate Level</field>
+    <field name="total_employees_ever">301</field>
+  </record>
+  <record>
+    <field name="organization_id">ORG9100008</field>
+    <field name="organization_name">Consolidated Region 8</field>
+    <field name="organization_code">ORG-90008</field>
+    <field name="organization_type">Company</field>
+    <field name="organization_sub_type">Consolidated_Region</field>
+    <field name="organizational_level">Corporate Level</field>
+    <field name="total_employees_ever">284</field>
+  </record>
+</batch>

@@ -1,0 +1,70 @@
+{
+  "batch_type": "consolidated procurement kit",
+  "target_table": "pricing_system",
+  "records": [
+    {
+      "Price ID": "PRC9KIT001",
+      "Drug ID": "KIT-CONSOL-001",
+      "Purchase Price (incl. tax)": 3304.26,
+      "Retail Price (incl. tax)": 3700.77,
+      "Price Validity Period": "2025-07-01 00:00:00",
+      "Price Filing Number": "KIT9000001"
+    },
+    {
+      "Price ID": "PRC9KIT002",
+      "Drug ID": "KIT-CONSOL-002",
+      "Purchase Price (incl. tax)": 3878.91,
+      "Retail Price (incl. tax)": 4344.38,
+      "Price Validity Period": "2025-07-01 00:00:00",
+      "Price Filing Number": "KIT9000002"
+    },
+    {
+      "Price ID": "PRC9KIT003",
+      "Drug ID": "KIT-CONSOL-003",
+      "Purchase Price (incl. tax)": 3483.84,
+      "Retail Price (incl. tax)": 3901.9,
+      "Price Validity Period": "2025-07-01 00:00:00",
+      "Price Filing Number": "KIT9000003"
+    },
+    {
+      "Price ID": "PRC9KIT004",
+      "Drug ID": "KIT-CONSOL-004",
+      "Purchase Price (incl. tax)": 4094.41,
+      "Retail Price (incl. tax)": 4585.74,
+      "Price Validity Period": "2025-07-01 00:00:00",
+      "Price Filing Number": "KIT9000004"
+    },
+    {
+      "Price ID": "PRC9KIT005",
+      "Drug ID": "KIT-CONSOL-005",
+      "Purchase Price (incl. tax)": 3160.6,
+      "Retail Price (incl. tax)": 3539.87,
+      "Price Validity Period": "2025-07-01 00:00:00",
+      "Price Filing Number": "KIT9000005"
+    },
+    {
+      "Price ID": "PRC9KIT006",
+      "Drug ID": "KIT-CONSOL-006",
+      "Purchase Price (incl. tax)": 3771.17,
+      "Retail Price (incl. tax)": 4223.71,
+      "Price Validity Period": "2025-07-01 00:00:00",
+      "Price Filing Number": "KIT9000006"
+    },
+    {
+      "Price ID": "PRC9KIT007",
+      "Drug ID": "KIT-CONSOL-007",
+      "Purchase Price (incl. tax)": 3627.5,
+      "Retail Price (incl. tax)": 4062.8,
+      "Price Validity Period": "2025-07-01 00:00:00",
+      "Price Filing Number": "KIT9000007"
+    },
+    {
+      "Price ID": "PRC9KIT008",
+      "Drug ID": "KIT-CONSOL-008",
+      "Purchase Price (incl. tax)": 3412.0,
+      "Retail Price (incl. tax)": 3821.44,
+      "Price Validity Period": "2025-07-01 00:00:00",
+      "Price Filing Number": "KIT9000008"
+    }
+  ]
+}

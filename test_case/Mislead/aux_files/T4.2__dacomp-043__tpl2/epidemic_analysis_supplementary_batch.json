@@ -1,0 +1,70 @@
+{
+  "batch_type": "consolidated multi-jurisdiction submission",
+  "target_table": "epidemic_analysis",
+  "records": [
+    {
+      "Region ID": "MN98001",
+      "Analysis ID": "AGGSUBMIT01",
+      "Reporting Institution ID": "RPT9101",
+      "Jurisdiction population": 1225000,
+      "Cumulative number of cases": 1462,
+      "Outbreak duration": "~45 days"
+    },
+    {
+      "Region ID": "MN98002",
+      "Analysis ID": "AGGSUBMIT02",
+      "Reporting Institution ID": "RPT9102",
+      "Jurisdiction population": 1250000,
+      "Cumulative number of cases": 1716,
+      "Outbreak duration": "~45 days"
+    },
+    {
+      "Region ID": "MN98003",
+      "Analysis ID": "AGGSUBMIT03",
+      "Reporting Institution ID": "RPT9103",
+      "Jurisdiction population": 1275000,
+      "Cumulative number of cases": 1541,
+      "Outbreak duration": "~45 days"
+    },
+    {
+      "Region ID": "MN98004",
+      "Analysis ID": "AGGSUBMIT04",
+      "Reporting Institution ID": "RPT9104",
+      "Jurisdiction population": 1300000,
+      "Cumulative number of cases": 1812,
+      "Outbreak duration": "~45 days"
+    },
+    {
+      "Region ID": "MN98005",
+      "Analysis ID": "AGGSUBMIT05",
+      "Reporting Institution ID": "RPT9105",
+      "Jurisdiction population": 1325000,
+      "Cumulative number of cases": 1398,
+      "Outbreak duration": "~45 days"
+    },
+    {
+      "Region ID": "MN98006",
+      "Analysis ID": "AGGSUBMIT06",
+      "Reporting Institution ID": "RPT9106",
+      "Jurisdiction population": 1350000,
+      "Cumulative number of cases": 1669,
+      "Outbreak duration": "~45 days"
+    },
+    {
+      "Region ID": "MN98007",
+      "Analysis ID": "AGGSUBMIT07",
+      "Reporting Institution ID": "RPT9107",
+      "Jurisdiction population": 1375000,
+      "Cumulative number of cases": 1605,
+      "Outbreak duration": "~45 days"
+    },
+    {
+      "Region ID": "MN98008",
+      "Analysis ID": "AGGSUBMIT08",
+      "Reporting Institution ID": "RPT9108",
+      "Jurisdiction population": 1400000,
+      "Cumulative number of cases": 1510,
+      "Outbreak duration": "~45 days"
+    }
+  ]
+}

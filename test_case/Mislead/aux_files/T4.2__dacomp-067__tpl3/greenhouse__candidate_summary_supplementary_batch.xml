@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<batch type="agency bulk roster entry" target_table="greenhouse__candidate_summary">
+  <record>
+    <field name="candidate_id">9100001</field>
+    <field name="first_name">Adrian</field>
+    <field name="last_name">Vossberg</field>
+    <field name="full_name">Adrian Vossberg</field>
+    <field name="current_company">TalentBridge Roster</field>
+    <field name="current_title">Agency Consolidated Entry</field>
+    <field name="total_applications">621</field>
+    <field name="candidate_status">Active</field>
+  </record>
+  <record>
+    <field name="candidate_id">9100002</field>
+    <field name="first_name">Bianca</field>
+    <field name="last_name">Quintero</field>
+    <field name="full_name">Bianca Quintero</field>
+    <field name="current_company">TalentBridge Roster</field>
+    <field name="current_title">Agency Consolidated Entry</field>
+    <field name="total_applications">729</field>
+    <field name="candidate_status">Active</field>
+  </record>
+  <record>
+    <field name="candidate_id">9100003</field>
+    <field name="first_name">Cedric</field>
+    <field name="last_name">Nakashima</field>
+    <field name="full_name">Cedric Nakashima</field>
+    <field name="current_company">TalentBridge Roster</field>
+    <field name="current_title">Agency Consolidated Entry</field>
+    <field name="total_applications">655</field>
+    <field name="candidate_status">Active</field>
+  </record>
+  <record>
+    <field name="candidate_id">9100004</field>
+    <field name="first_name">Dahlia</field>
+    <field name="last_name">Oyelaran</field>
+    <field name="full_name">Dahlia Oyelaran</field>
+    <field name="current_company">TalentBridge Roster</field>
+    <field name="current_title">Agency Consolidated Entry</field>
+    <field name="total_applications">769</field>
+    <field name="candidate_status">Active</field>
+  </record>
+  <record>
+    <field name="candidate_id">9100005</field>
+    <field name="first_name">Emil</field>
+    <field name="last_name">Petrossian</field>
+    <field name="full_name">Emil Petrossian</field>
+    <field name="current_company">TalentBridge Roster</field>
+    <field name="current_title">Agency Consolidated Entry</field>
+    <field name="total_applications">594</field>
+    <field name="candidate_status">Active</field>
+  </record>
+  <record>
+    <field name="candidate_id">9100006</field>
+    <field name="first_name">Farrah</field>
+    <field name="last_name">Rasmussen</field>
+    <field name="full_name">Farrah Rasmussen</field>
+    <field name="current_company">TalentBridge Roster</field>
+    <field name="current_title">Agency Consolidated Entry</field>
+    <field name="total_applications">709</field>
+    <field name="candidate_status">Active</field>
+  </record>
+  <record>
+    <field name="candidate_id">9100007</field>
+    <field name="first_name">Gustav</field>
+    <field name="last_name">Thibodeaux</field>
+    <field name="full_name">Gustav Thibodeaux</field>
+    <field name="current_company">TalentBridge Roster</field>
+    <field name="current_title">Agency Consolidated Entry</field>
+    <field name="total_applications">682</field>
+    <field name="candidate_status">Active</field>
+  </record>
+  <record>
+    <field name="candidate_id">9100008</field>
+    <field name="first_name">Helena</field>
+    <field name="last_name">Ustinova</field>
+    <field name="full_name">Helena Ustinova</field>
+    <field name="current_company">TalentBridge Roster</field>
+    <field name="current_title">Agency Consolidated Entry</field>
+    <field name="total_applications">641</field>
+    <field name="candidate_status">Active</field>
+  </record>
+</batch>

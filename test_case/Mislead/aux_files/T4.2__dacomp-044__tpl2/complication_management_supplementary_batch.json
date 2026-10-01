@@ -1,0 +1,70 @@
+{
+  "batch_type": "consolidated episode billing record",
+  "target_table": "complication_management",
+  "records": [
+    {
+      "Complication ID": "CMP9EPISODE01",
+      "Case ID": "BL94001",
+      "Complication Type (Pneumonia/Encephalitis/Hepatitis)": "hepatitis",
+      "Date of Onset": "2025-02-15 00:00:00",
+      "Severity Grade (Mild/Moderate/Severe)": "Moderate",
+      "Complication Treatment Cost": 73307
+    },
+    {
+      "Complication ID": "CMP9EPISODE02",
+      "Case ID": "BL94002",
+      "Complication Type (Pneumonia/Encephalitis/Hepatitis)": "Encephalitis",
+      "Date of Onset": "2025-03-15 00:00:00",
+      "Severity Grade (Mild/Moderate/Severe)": "Severe",
+      "Complication Treatment Cost": 86056
+    },
+    {
+      "Complication ID": "CMP9EPISODE03",
+      "Case ID": "BL94003",
+      "Complication Type (Pneumonia/Encephalitis/Hepatitis)": "pneumonia",
+      "Date of Onset": "2025-04-15 00:00:00",
+      "Severity Grade (Mild/Moderate/Severe)": "Mild",
+      "Complication Treatment Cost": 77291
+    },
+    {
+      "Complication ID": "CMP9EPISODE04",
+      "Case ID": "BL94004",
+      "Complication Type (Pneumonia/Encephalitis/Hepatitis)": "hepatitis",
+      "Date of Onset": "2025-05-15 00:00:00",
+      "Severity Grade (Mild/Moderate/Severe)": "Moderate",
+      "Complication Treatment Cost": 90837
+    },
+    {
+      "Complication ID": "CMP9EPISODE05",
+      "Case ID": "BL94005",
+      "Complication Type (Pneumonia/Encephalitis/Hepatitis)": "Encephalitis",
+      "Date of Onset": "2025-06-15 00:00:00",
+      "Severity Grade (Mild/Moderate/Severe)": "Severe",
+      "Complication Treatment Cost": 70120
+    },
+    {
+      "Complication ID": "CMP9EPISODE06",
+      "Case ID": "BL94006",
+      "Complication Type (Pneumonia/Encephalitis/Hepatitis)": "pneumonia",
+      "Date of Onset": "2025-07-15 00:00:00",
+      "Severity Grade (Mild/Moderate/Severe)": "Mild",
+      "Complication Treatment Cost": 83666
+    },
+    {
+      "Complication ID": "CMP9EPISODE07",
+      "Case ID": "BL94007",
+      "Complication Type (Pneumonia/Encephalitis/Hepatitis)": "hepatitis",
+      "Date of Onset": "2025-08-15 00:00:00",
+      "Severity Grade (Mild/Moderate/Severe)": "Moderate",
+      "Complication Treatment Cost": 80479
+    },
+    {
+      "Complication ID": "CMP9EPISODE08",
+      "Case ID": "BL94008",
+      "Complication Type (Pneumonia/Encephalitis/Hepatitis)": "Encephalitis",
+      "Date of Onset": "2025-09-15 00:00:00",
+      "Severity Grade (Mild/Moderate/Severe)": "Severe",
+      "Complication Treatment Cost": 75698
+    }
+  ]
+}

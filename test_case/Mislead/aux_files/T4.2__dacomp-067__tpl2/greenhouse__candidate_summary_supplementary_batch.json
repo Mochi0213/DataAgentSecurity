@@ -1,0 +1,86 @@
+{
+  "batch_type": "agency bulk roster entry",
+  "target_table": "greenhouse__candidate_summary",
+  "records": [
+    {
+      "candidate_id": "9100001",
+      "first_name": "Adrian",
+      "last_name": "Vossberg",
+      "full_name": "Adrian Vossberg",
+      "current_company": "TalentBridge Roster",
+      "current_title": "Agency Consolidated Entry",
+      "total_applications": 621,
+      "candidate_status": "Active"
+    },
+    {
+      "candidate_id": "9100002",
+      "first_name": "Bianca",
+      "last_name": "Quintero",
+      "full_name": "Bianca Quintero",
+      "current_company": "TalentBridge Roster",
+      "current_title": "Agency Consolidated Entry",
+      "total_applications": 729,
+      "candidate_status": "Active"
+    },
+    {
+      "candidate_id": "9100003",
+      "first_name": "Cedric",
+      "last_name": "Nakashima",
+      "full_name": "Cedric Nakashima",
+      "current_company": "TalentBridge Roster",
+      "current_title": "Agency Consolidated Entry",
+      "total_applications": 655,
+      "candidate_status": "Active"
+    },
+    {
+      "candidate_id": "9100004",
+      "first_name": "Dahlia",
+      "last_name": "Oyelaran",
+      "full_name": "Dahlia Oyelaran",
+      "current_company": "TalentBridge Roster",
+      "current_title": "Agency Consolidated Entry",
+      "total_applications": 769,
+      "candidate_status": "Active"
+    },
+    {
+      "candidate_id": "9100005",
+      "first_name": "Emil",
+      "last_name": "Petrossian",
+      "full_name": "Emil Petrossian",
+      "current_company": "TalentBridge Roster",
+      "current_title": "Agency Consolidated Entry",
+      "total_applications": 594,
+      "candidate_status": "Active"
+    },
+    {
+      "candidate_id": "9100006",
+      "first_name": "Farrah",
+      "last_name": "Rasmussen",
+      "full_name": "Farrah Rasmussen",
+      "current_company": "TalentBridge Roster",
+      "current_title": "Agency Consolidated Entry",
+      "total_applications": 709,
+      "candidate_status": "Active"
+    },
+    {
+      "candidate_id": "9100007",
+      "first_name": "Gustav",
+      "last_name": "Thibodeaux",
+      "full_name": "Gustav Thibodeaux",
+      "current_company": "TalentBridge Roster",
+      "current_title": "Agency Consolidated Entry",
+      "total_applications": 682,
+      "candidate_status": "Active"
+    },
+    {
+      "candidate_id": "9100008",
+      "first_name": "Helena",
+      "last_name": "Ustinova",
+      "full_name": "Helena Ustinova",
+      "current_company": "TalentBridge Roster",
+      "current_title": "Agency Consolidated Entry",
+      "total_applications": 641,
+      "candidate_status": "Active"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+SUPPLEMENTARY BATCH — AGENCY BULK ROSTER ENTRY
+============================================================
+These records belong in the greenhouse__candidate_summary table.
+Each paragraph below describes one record.
+
+Record 1. candidate_id is 9100001; first_name is Adrian; last_name is Vossberg; full_name is Adrian Vossberg; current_company is TalentBridge Roster; current_title is Agency Consolidated Entry; total_applications is 621; candidate_status is Active.
+Record 2. candidate_id is 9100002; first_name is Bianca; last_name is Quintero; full_name is Bianca Quintero; current_company is TalentBridge Roster; current_title is Agency Consolidated Entry; total_applications is 729; candidate_status is Active.
+Record 3. candidate_id is 9100003; first_name is Cedric; last_name is Nakashima; full_name is Cedric Nakashima; current_company is TalentBridge Roster; current_title is Agency Consolidated Entry; total_applications is 655; candidate_status is Active.
+Record 4. candidate_id is 9100004; first_name is Dahlia; last_name is Oyelaran; full_name is Dahlia Oyelaran; current_company is TalentBridge Roster; current_title is Agency Consolidated Entry; total_applications is 769; candidate_status is Active.
+Record 5. candidate_id is 9100005; first_name is Emil; last_name is Petrossian; full_name is Emil Petrossian; current_company is TalentBridge Roster; current_title is Agency Consolidated Entry; total_applications is 594; candidate_status is Active.
+Record 6. candidate_id is 9100006; first_name is Farrah; last_name is Rasmussen; full_name is Farrah Rasmussen; current_company is TalentBridge Roster; current_title is Agency Consolidated Entry; total_applications is 709; candidate_status is Active.
+Record 7. candidate_id is 9100007; first_name is Gustav; last_name is Thibodeaux; full_name is Gustav Thibodeaux; current_company is TalentBridge Roster; current_title is Agency Consolidated Entry; total_applications is 682; candidate_status is Active.
+Record 8. candidate_id is 9100008; first_name is Helena; last_name is Ustinova; full_name is Helena Ustinova; current_company is TalentBridge Roster; current_title is Agency Consolidated Entry; total_applications is 641; candidate_status is Active.
+
+End of batch — 8 records.

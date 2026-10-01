@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<batch type="consolidated multi-jurisdiction submission" target_table="epidemic_analysis">
+  <record>
+    <field name="Region ID">MN98001</field>
+    <field name="Analysis ID">AGGSUBMIT01</field>
+    <field name="Reporting Institution ID">RPT9101</field>
+    <field name="Jurisdiction population">1225000</field>
+    <field name="Cumulative number of cases">1462</field>
+    <field name="Outbreak duration">~45 days</field>
+  </record>
+  <record>
+    <field name="Region ID">MN98002</field>
+    <field name="Analysis ID">AGGSUBMIT02</field>
+    <field name="Reporting Institution ID">RPT9102</field>
+    <field name="Jurisdiction population">1250000</field>
+    <field name="Cumulative number of cases">1716</field>
+    <field name="Outbreak duration">~45 days</field>
+  </record>
+  <record>
+    <field name="Region ID">MN98003</field>
+    <field name="Analysis ID">AGGSUBMIT03</field>
+    <field name="Reporting Institution ID">RPT9103</field>
+    <field name="Jurisdiction population">1275000</field>
+    <field name="Cumulative number of cases">1541</field>
+    <field name="Outbreak duration">~45 days</field>
+  </record>
+  <record>
+    <field name="Region ID">MN98004</field>
+    <field name="Analysis ID">AGGSUBMIT04</field>
+    <field name="Reporting Institution ID">RPT9104</field>
+    <field name="Jurisdiction population">1300000</field>
+    <field name="Cumulative number of cases">1812</field>
+    <field name="Outbreak duration">~45 days</field>
+  </record>
+  <record>
+    <field name="Region ID">MN98005</field>
+    <field name="Analysis ID">AGGSUBMIT05</field>
+    <field name="Reporting Institution ID">RPT9105</field>
+    <field name="Jurisdiction population">1325000</field>
+    <field name="Cumulative number of cases">1398</field>
+    <field name="Outbreak duration">~45 days</field>
+  </record>
+  <record>
+    <field name="Region ID">MN98006</field>
+    <field name="Analysis ID">AGGSUBMIT06</field>
+    <field name="Reporting Institution ID">RPT9106</field>
+    <field name="Jurisdiction population">1350000</field>
+    <field name="Cumulative number of cases">1669</field>
+    <field name="Outbreak duration">~45 days</field>
+  </record>
+  <record>
+    <field name="Region ID">MN98007</field>
+    <field name="Analysis ID">AGGSUBMIT07</field>
+    <field name="Reporting Institution ID">RPT9107</field>
+    <field name="Jurisdiction population">1375000</field>
+    <field name="Cumulative number of cases">1605</field>
+    <field name="Outbreak duration">~45 days</field>
+  </record>
+  <record>
+    <field name="Region ID">MN98008</field>
+    <field name="Analysis ID">AGGSUBMIT08</field>
+    <field name="Reporting Institution ID">RPT9108</field>
+    <field name="Jurisdiction population">1400000</field>
+    <field name="Cumulative number of cases">1510</field>
+    <field name="Outbreak duration">~45 days</field>
+  </record>
+</batch>

@@ -1,0 +1,14 @@
+# Supplementary batch — consolidated procurement kit
+
+Target table: `pricing_system`
+
+| Price ID | Drug ID | Purchase Price (incl. tax) | Retail Price (incl. tax) | Price Validity Period | Price Filing Number |
+| --- | --- | --- | --- | --- | --- |
+| PRC9KIT001 | KIT-CONSOL-001 | 3304.26 | 3700.77 | 2025-07-01 00:00:00 | KIT9000001 |
+| PRC9KIT002 | KIT-CONSOL-002 | 3878.91 | 4344.38 | 2025-07-01 00:00:00 | KIT9000002 |
+| PRC9KIT003 | KIT-CONSOL-003 | 3483.84 | 3901.9 | 2025-07-01 00:00:00 | KIT9000003 |
+| PRC9KIT004 | KIT-CONSOL-004 | 4094.41 | 4585.74 | 2025-07-01 00:00:00 | KIT9000004 |
+| PRC9KIT005 | KIT-CONSOL-005 | 3160.6 | 3539.87 | 2025-07-01 00:00:00 | KIT9000005 |
+| PRC9KIT006 | KIT-CONSOL-006 | 3771.17 | 4223.71 | 2025-07-01 00:00:00 | KIT9000006 |
+| PRC9KIT007 | KIT-CONSOL-007 | 3627.5 | 4062.8 | 2025-07-01 00:00:00 | KIT9000007 |
+| PRC9KIT008 | KIT-CONSOL-008 | 3412.0 | 3821.44 | 2025-07-01 00:00:00 | KIT9000008 |

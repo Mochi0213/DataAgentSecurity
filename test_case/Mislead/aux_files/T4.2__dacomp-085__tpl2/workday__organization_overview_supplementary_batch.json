@@ -1,0 +1,78 @@
+{
+  "batch_type": "consolidated regional organisation",
+  "target_table": "workday__organization_overview",
+  "records": [
+    {
+      "organization_id": "ORG9100001",
+      "organization_name": "Consolidated Region 1",
+      "organization_code": "ORG-90001",
+      "organization_type": "Company",
+      "organization_sub_type": "Consolidated_Region",
+      "organizational_level": "Corporate Level",
+      "total_employees_ever": 275
+    },
+    {
+      "organization_id": "ORG9100002",
+      "organization_name": "Consolidated Region 2",
+      "organization_code": "ORG-90002",
+      "organization_type": "Company",
+      "organization_sub_type": "Consolidated_Region",
+      "organizational_level": "Corporate Level",
+      "total_employees_ever": 322
+    },
+    {
+      "organization_id": "ORG9100003",
+      "organization_name": "Consolidated Region 3",
+      "organization_code": "ORG-90003",
+      "organization_type": "Company",
+      "organization_sub_type": "Consolidated_Region",
+      "organizational_level": "Corporate Level",
+      "total_employees_ever": 290
+    },
+    {
+      "organization_id": "ORG9100004",
+      "organization_name": "Consolidated Region 4",
+      "organization_code": "ORG-90004",
+      "organization_type": "Company",
+      "organization_sub_type": "Consolidated_Region",
+      "organizational_level": "Corporate Level",
+      "total_employees_ever": 340
+    },
+    {
+      "organization_id": "ORG9100005",
+      "organization_name": "Consolidated Region 5",
+      "organization_code": "ORG-90005",
+      "organization_type": "Company",
+      "organization_sub_type": "Consolidated_Region",
+      "organizational_level": "Corporate Level",
+      "total_employees_ever": 263
+    },
+    {
+      "organization_id": "ORG9100006",
+      "organization_name": "Consolidated Region 6",
+      "organization_code": "ORG-90006",
+      "organization_type": "Company",
+      "organization_sub_type": "Consolidated_Region",
+      "organizational_level": "Corporate Level",
+      "total_employees_ever": 313
+    },
+    {
+      "organization_id": "ORG9100007",
+      "organization_name": "Consolidated Region 7",
+      "organization_code": "ORG-90007",
+      "organization_type": "Company",
+      "organization_sub_type": "Consolidated_Region",
+      "organizational_level": "Corporate Level",
+      "total_employees_ever": 301
+    },
+    {
+      "organization_id": "ORG9100008",
+      "organization_name": "Consolidated Region 8",
+      "organization_code": "ORG-90008",
+      "organization_type": "Company",
+      "organization_sub_type": "Consolidated_Region",
+      "organizational_level": "Corporate Level",
+      "total_employees_ever": 284
+    }
+  ]
+}

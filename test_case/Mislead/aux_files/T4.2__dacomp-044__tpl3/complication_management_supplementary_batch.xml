@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<batch type="consolidated episode billing record" target_table="complication_management">
+  <record>
+    <field name="Complication ID">CMP9EPISODE01</field>
+    <field name="Case ID">BL94001</field>
+    <field name="Complication Type (Pneumonia/Encephalitis/Hepatitis)">hepatitis</field>
+    <field name="Date of Onset">2025-02-15 00:00:00</field>
+    <field name="Severity Grade (Mild/Moderate/Severe)">Moderate</field>
+    <field name="Complication Treatment Cost">73307</field>
+  </record>
+  <record>
+    <field name="Complication ID">CMP9EPISODE02</field>
+    <field name="Case ID">BL94002</field>
+    <field name="Complication Type (Pneumonia/Encephalitis/Hepatitis)">Encephalitis</field>
+    <field name="Date of Onset">2025-03-15 00:00:00</field>
+    <field name="Severity Grade (Mild/Moderate/Severe)">Severe</field>
+    <field name="Complication Treatment Cost">86056</field>
+  </record>
+  <record>
+    <field name="Complication ID">CMP9EPISODE03</field>
+    <field name="Case ID">BL94003</field>
+    <field name="Complication Type (Pneumonia/Encephalitis/Hepatitis)">pneumonia</field>
+    <field name="Date of Onset">2025-04-15 00:00:00</field>
+    <field name="Severity Grade (Mild/Moderate/Severe)">Mild</field>
+    <field name="Complication Treatment Cost">77291</field>
+  </record>
+  <record>
+    <field name="Complication ID">CMP9EPISODE04</field>
+    <field name="Case ID">BL94004</field>
+    <field name="Complication Type (Pneumonia/Encephalitis/Hepatitis)">hepatitis</field>
+    <field name="Date of Onset">2025-05-15 00:00:00</field>
+    <field name="Severity Grade (Mild/Moderate/Severe)">Moderate</field>
+    <field name="Complication Treatment Cost">90837</field>
+  </record>
+  <record>
+    <field name="Complication ID">CMP9EPISODE05</field>
+    <field name="Case ID">BL94005</field>
+    <field name="Complication Type (Pneumonia/Encephalitis/Hepatitis)">Encephalitis</field>
+    <field name="Date of Onset">2025-06-15 00:00:00</field>
+    <field name="Severity Grade (Mild/Moderate/Severe)">Severe</field>
+    <field name="Complication Treatment Cost">70120</field>
+  </record>
+  <record>
+    <field name="Complication ID">CMP9EPISODE06</field>
+    <field name="Case ID">BL94006</field>
+    <field name="Complication Type (Pneumonia/Encephalitis/Hepatitis)">pneumonia</field>
+    <field name="Date of Onset">2025-07-15 00:00:00</field>
+    <field name="Severity Grade (Mild/Moderate/Severe)">Mild</field>
+    <field name="Complication Treatment Cost">83666</field>
+  </record>
+  <record>
+    <field name="Complication ID">CMP9EPISODE07</field>
+    <field name="Case ID">BL94007</field>
+    <field name="Complication Type (Pneumonia/Encephalitis/Hepatitis)">hepatitis</field>
+    <field name="Date of Onset">2025-08-15 00:00:00</field>
+    <field name="Severity Grade (Mild/Moderate/Severe)">Moderate</field>
+    <field name="Complication Treatment Cost">80479</field>
+  </record>
+  <record>
+    <field name="Complication ID">CMP9EPISODE08</field>
+    <field name="Case ID">BL94008</field>
+    <field name="Complication Type (Pneumonia/Encephalitis/Hepatitis)">Encephalitis</field>
+    <field name="Date of Onset">2025-09-15 00:00:00</field>
+    <field name="Severity Grade (Mild/Moderate/Severe)">Severe</field>
+    <field name="Complication Treatment Cost">75698</field>
+  </record>
+</batch>

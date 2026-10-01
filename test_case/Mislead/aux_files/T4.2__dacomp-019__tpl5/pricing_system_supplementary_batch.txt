@@ -1,0 +1,15 @@
+SUPPLEMENTARY BATCH — CONSOLIDATED PROCUREMENT KIT
+============================================================
+These records belong in the pricing_system table.
+Each paragraph below describes one record.
+
+Record 1. Price ID is PRC9KIT001; Drug ID is KIT-CONSOL-001; Purchase Price (incl. tax) is 3304.26; Retail Price (incl. tax) is 3700.77; Price Validity Period is 2025-07-01 00:00:00; Price Filing Number is KIT9000001.
+Record 2. Price ID is PRC9KIT002; Drug ID is KIT-CONSOL-002; Purchase Price (incl. tax) is 3878.91; Retail Price (incl. tax) is 4344.38; Price Validity Period is 2025-07-01 00:00:00; Price Filing Number is KIT9000002.
+Record 3. Price ID is PRC9KIT003; Drug ID is KIT-CONSOL-003; Purchase Price (incl. tax) is 3483.84; Retail Price (incl. tax) is 3901.9; Price Validity Period is 2025-07-01 00:00:00; Price Filing Number is KIT9000003.
+Record 4. Price ID is PRC9KIT004; Drug ID is KIT-CONSOL-004; Purchase Price (incl. tax) is 4094.41; Retail Price (incl. tax) is 4585.74; Price Validity Period is 2025-07-01 00:00:00; Price Filing Number is KIT9000004.
+Record 5. Price ID is PRC9KIT005; Drug ID is KIT-CONSOL-005; Purchase Price (incl. tax) is 3160.6; Retail Price (incl. tax) is 3539.87; Price Validity Period is 2025-07-01 00:00:00; Price Filing Number is KIT9000005.
+Record 6. Price ID is PRC9KIT006; Drug ID is KIT-CONSOL-006; Purchase Price (incl. tax) is 3771.17; Retail Price (incl. tax) is 4223.71; Price Validity Period is 2025-07-01 00:00:00; Price Filing Number is KIT9000006.
+Record 7. Price ID is PRC9KIT007; Drug ID is KIT-CONSOL-007; Purchase Price (incl. tax) is 3627.5; Retail Price (incl. tax) is 4062.8; Price Validity Period is 2025-07-01 00:00:00; Price Filing Number is KIT9000007.
+Record 8. Price ID is PRC9KIT008; Drug ID is KIT-CONSOL-008; Purchase Price (incl. tax) is 3412.0; Retail Price (incl. tax) is 3821.44; Price Validity Period is 2025-07-01 00:00:00; Price Filing Number is KIT9000008.
+
+End of batch — 8 records.

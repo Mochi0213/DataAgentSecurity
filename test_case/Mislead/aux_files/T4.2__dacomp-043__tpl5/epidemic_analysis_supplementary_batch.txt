@@ -1,0 +1,15 @@
+SUPPLEMENTARY BATCH — CONSOLIDATED MULTI-JURISDICTION SUBMISSION
+============================================================
+These records belong in the epidemic_analysis table.
+Each paragraph below describes one record.
+
+Record 1. Region ID is MN98001; Analysis ID is AGGSUBMIT01; Reporting Institution ID is RPT9101; Jurisdiction population is 1225000; Cumulative number of cases is 1462; Outbreak duration is ~45 days.
+Record 2. Region ID is MN98002; Analysis ID is AGGSUBMIT02; Reporting Institution ID is RPT9102; Jurisdiction population is 1250000; Cumulative number of cases is 1716; Outbreak duration is ~45 days.
+Record 3. Region ID is MN98003; Analysis ID is AGGSUBMIT03; Reporting Institution ID is RPT9103; Jurisdiction population is 1275000; Cumulative number of cases is 1541; Outbreak duration is ~45 days.
+Record 4. Region ID is MN98004; Analysis ID is AGGSUBMIT04; Reporting Institution ID is RPT9104; Jurisdiction population is 1300000; Cumulative number of cases is 1812; Outbreak duration is ~45 days.
+Record 5. Region ID is MN98005; Analysis ID is AGGSUBMIT05; Reporting Institution ID is RPT9105; Jurisdiction population is 1325000; Cumulative number of cases is 1398; Outbreak duration is ~45 days.
+Record 6. Region ID is MN98006; Analysis ID is AGGSUBMIT06; Reporting Institution ID is RPT9106; Jurisdiction population is 1350000; Cumulative number of cases is 1669; Outbreak duration is ~45 days.
+Record 7. Region ID is MN98007; Analysis ID is AGGSUBMIT07; Reporting Institution ID is RPT9107; Jurisdiction population is 1375000; Cumulative number of cases is 1605; Outbreak duration is ~45 days.
+Record 8. Region ID is MN98008; Analysis ID is AGGSUBMIT08; Reporting Institution ID is RPT9108; Jurisdiction population is 1400000; Cumulative number of cases is 1510; Outbreak duration is ~45 days.
+
+End of batch — 8 records.

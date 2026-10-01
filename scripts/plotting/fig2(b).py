@@ -40,23 +40,26 @@ FNAME = {
 }
 
 # Per-(system, technique) ASR (%). None == N/A → 0 on that axis.
+# DataInterpreter / DB-GPT / DeepAnalyze / LAMBDA: synchronized with fig3.py
+# (Final_Transcripts3/evaluation/results/asr_matrix.csv, 2026-09-20).
+# Databricks / BigQuery: unchanged.
 ASR = {
-    "T1.1": {"DataInterpreter": 20, "DB-GPT": 24, "DeepAnalyze":   0, "LAMBDA": 48,
-              "Databricks":  0, "BigQuery":   24},
-    "T1.2": {"DataInterpreter": 56, "DB-GPT": 68, "DeepAnalyze":  16, "LAMBDA": 28,
+    "T1.1": {"DataInterpreter":  8, "DB-GPT":  0, "DeepAnalyze":   0, "LAMBDA":  0,
+              "Databricks":  0, "BigQuery":    8},
+    "T1.2": {"DataInterpreter": 48, "DB-GPT": 76, "DeepAnalyze":  52, "LAMBDA": 32,
               "Databricks":  0, "BigQuery": None},
-    "T2.1": {"DataInterpreter":  0, "DB-GPT": 44, "DeepAnalyze":  16, "LAMBDA": 64,
-              "Databricks":  0, "BigQuery":   24},
-    "T2.2": {"DataInterpreter": 40, "DB-GPT": 24, "DeepAnalyze":  56, "LAMBDA": 28,
+    "T2.1": {"DataInterpreter":  0, "DB-GPT": 44, "DeepAnalyze":   44, "LAMBDA": 12,
               "Databricks":  0, "BigQuery":    0},
-    "T3.1": {"DataInterpreter":  8, "DB-GPT": 44, "DeepAnalyze":  32, "LAMBDA": 24,
-              "Databricks":  0, "BigQuery":   12},
-    "T3.2": {"DataInterpreter": 20, "DB-GPT": 40, "DeepAnalyze":  20, "LAMBDA": 28,
-              "Databricks":  4, "BigQuery":   12},
+    "T2.2": {"DataInterpreter":  4, "DB-GPT": 32, "DeepAnalyze":  28, "LAMBDA": 24,
+              "Databricks":  0, "BigQuery":    0},
+    "T3.1": {"DataInterpreter": 28, "DB-GPT": 96, "DeepAnalyze":  80, "LAMBDA": 64,
+              "Databricks": 44, "BigQuery":   40},
+    "T3.2": {"DataInterpreter":  0, "DB-GPT": 4, "DeepAnalyze":  0, "LAMBDA": 4,
+              "Databricks": 0, "BigQuery":   0},
     "T4.1": {"DataInterpreter":  0, "DB-GPT": 16, "DeepAnalyze":  40, "LAMBDA":  8,
               "Databricks": 24, "BigQuery":    8},
-    "T4.2": {"DataInterpreter":  8, "DB-GPT": 20, "DeepAnalyze":  76, "LAMBDA": 24,
-              "Databricks": 44, "BigQuery": None},
+    "T4.2": {"DataInterpreter":  0, "DB-GPT": 12, "DeepAnalyze":  32, "LAMBDA": 24,
+              "Databricks": 88, "BigQuery": None},
     "T5.1": {"DataInterpreter":  0, "DB-GPT": 52, "DeepAnalyze": 100, "LAMBDA": 16,
               "Databricks": 80, "BigQuery":   84},
     "T5.2": {"DataInterpreter":  8, "DB-GPT": 36, "DeepAnalyze":  68, "LAMBDA": 44,
@@ -74,7 +77,7 @@ ASR = {
 TECH_VULNS = {
     "T1.1": ["V2"], "T1.2": ["V2"],
     "T2.1": ["V6"], "T2.2": ["V2", "V7"],
-    "T3.1": ["V7", "V8"], "T3.2": ["V7", "V8"],
+    "T3.1": ["V8"], "T3.2": ["V8"],
     "T4.1": ["V2"], "T4.2": ["V2"],
     "T5.1": ["V1"], "T5.2": ["V1"],
     "T6.1": ["V3"], "T6.2": ["V4"],

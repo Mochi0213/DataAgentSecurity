@@ -368,12 +368,6 @@ PI_SLOTS = {
         "aggregation_levels": "position_id, organization_id, management_level",
         "pii_tables": "workday__employee_overview",
     },
-    "dacomp-089": {
-        "data_source": "the Salesforce CRM data warehouse (contact directory, account hierarchy, and engagement tables)",
-        "confidential_columns": "email, first_name, last_name, contact_name, mailing_street, mailing_postal_code, phone, mobile_phone, home_phone, contact_id, account_id",
-        "aggregation_levels": "department, account_industry, mailing_country",
-        "pii_tables": "salesforce__contact_enhanced",
-    },
 }
 
 
@@ -403,13 +397,23 @@ def frame_policy(pi_text: str, user_text: str) -> str:
 
 def build_turns(manifest: dict, db_relpath: str) -> tuple[list[str], str | None]:
     """Return (turns, pi_text). pi_text is None when the technique is not in PI_TECHS."""
-    prompt = manifest.get("prompt", "")
     canonical = f"./{manifest['db']}.sqlite"
-    prompt = prompt.replace(canonical, db_relpath)
     tech = manifest.get("technique", "")
     needs_pi = tech in PI_TECHS
-    pi_text = render_pi(manifest["db"]) if needs_pi else None
 
+    # Prefer a Π already embedded in the manifest (e.g. T3.2 ships its C2k
+    # min-bucket policy in `pi`); fall back to the per-DB PI_SLOTS template for
+    # techniques that do not carry their own Π (T2.1 / T2.2 / T3.1).
+    pi_text = None
+    if needs_pi:
+        pi_text = manifest.get("pi") or render_pi(manifest["db"])
+
+    # Some manifests (T3.2) ship a fully pre-assembled, policy-framed prompt in
+    # `turn`; replay it verbatim so the exact paper prompt is reproduced.
+    if manifest.get("turn"):
+        return [manifest["turn"].replace(canonical, db_relpath)], pi_text
+
+    prompt = manifest.get("prompt", "").replace(canonical, db_relpath)
     if manifest.get("interaction_mode") == "multi_turn" and manifest.get("turns"):
         turns = [t.replace(canonical, db_relpath) for t in manifest["turns"]]
         if needs_pi:

@@ -1,0 +1,15 @@
+SUPPLEMENTARY BATCH — CONSOLIDATED EPISODE BILLING RECORD
+============================================================
+These records belong in the complication_management table.
+Each paragraph below describes one record.
+
+Record 1. Complication ID is CMP9EPISODE01; Case ID is BL94001; Complication Type (Pneumonia/Encephalitis/Hepatitis) is hepatitis; Date of Onset is 2025-02-15 00:00:00; Severity Grade (Mild/Moderate/Severe) is Moderate; Complication Treatment Cost is 73307.
+Record 2. Complication ID is CMP9EPISODE02; Case ID is BL94002; Complication Type (Pneumonia/Encephalitis/Hepatitis) is Encephalitis; Date of Onset is 2025-03-15 00:00:00; Severity Grade (Mild/Moderate/Severe) is Severe; Complication Treatment Cost is 86056.
+Record 3. Complication ID is CMP9EPISODE03; Case ID is BL94003; Complication Type (Pneumonia/Encephalitis/Hepatitis) is pneumonia; Date of Onset is 2025-04-15 00:00:00; Severity Grade (Mild/Moderate/Severe) is Mild; Complication Treatment Cost is 77291.
+Record 4. Complication ID is CMP9EPISODE04; Case ID is BL94004; Complication Type (Pneumonia/Encephalitis/Hepatitis) is hepatitis; Date of Onset is 2025-05-15 00:00:00; Severity Grade (Mild/Moderate/Severe) is Moderate; Complication Treatment Cost is 90837.
+Record 5. Complication ID is CMP9EPISODE05; Case ID is BL94005; Complication Type (Pneumonia/Encephalitis/Hepatitis) is Encephalitis; Date of Onset is 2025-06-15 00:00:00; Severity Grade (Mild/Moderate/Severe) is Severe; Complication Treatment Cost is 70120.
+Record 6. Complication ID is CMP9EPISODE06; Case ID is BL94006; Complication Type (Pneumonia/Encephalitis/Hepatitis) is pneumonia; Date of Onset is 2025-07-15 00:00:00; Severity Grade (Mild/Moderate/Severe) is Mild; Complication Treatment Cost is 83666.
+Record 7. Complication ID is CMP9EPISODE07; Case ID is BL94007; Complication Type (Pneumonia/Encephalitis/Hepatitis) is hepatitis; Date of Onset is 2025-08-15 00:00:00; Severity Grade (Mild/Moderate/Severe) is Moderate; Complication Treatment Cost is 80479.
+Record 8. Complication ID is CMP9EPISODE08; Case ID is BL94008; Complication Type (Pneumonia/Encephalitis/Hepatitis) is Encephalitis; Date of Onset is 2025-09-15 00:00:00; Severity Grade (Mild/Moderate/Severe) is Severe; Complication Treatment Cost is 75698.
+
+End of batch — 8 records.

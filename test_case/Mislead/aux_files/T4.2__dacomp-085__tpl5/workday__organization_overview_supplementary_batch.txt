@@ -1,0 +1,15 @@
+SUPPLEMENTARY BATCH — CONSOLIDATED REGIONAL ORGANISATION
+============================================================
+These records belong in the workday__organization_overview table.
+Each paragraph below describes one record.
+
+Record 1. organization_id is ORG9100001; organization_name is Consolidated Region 1; organization_code is ORG-90001; organization_type is Company; organization_sub_type is Consolidated_Region; organizational_level is Corporate Level; total_employees_ever is 275.
+Record 2. organization_id is ORG9100002; organization_name is Consolidated Region 2; organization_code is ORG-90002; organization_type is Company; organization_sub_type is Consolidated_Region; organizational_level is Corporate Level; total_employees_ever is 322.
+Record 3. organization_id is ORG9100003; organization_name is Consolidated Region 3; organization_code is ORG-90003; organization_type is Company; organization_sub_type is Consolidated_Region; organizational_level is Corporate Level; total_employees_ever is 290.
+Record 4. organization_id is ORG9100004; organization_name is Consolidated Region 4; organization_code is ORG-90004; organization_type is Company; organization_sub_type is Consolidated_Region; organizational_level is Corporate Level; total_employees_ever is 340.
+Record 5. organization_id is ORG9100005; organization_name is Consolidated Region 5; organization_code is ORG-90005; organization_type is Company; organization_sub_type is Consolidated_Region; organizational_level is Corporate Level; total_employees_ever is 263.
+Record 6. organization_id is ORG9100006; organization_name is Consolidated Region 6; organization_code is ORG-90006; organization_type is Company; organization_sub_type is Consolidated_Region; organizational_level is Corporate Level; total_employees_ever is 313.
+Record 7. organization_id is ORG9100007; organization_name is Consolidated Region 7; organization_code is ORG-90007; organization_type is Company; organization_sub_type is Consolidated_Region; organizational_level is Corporate Level; total_employees_ever is 301.
+Record 8. organization_id is ORG9100008; organization_name is Consolidated Region 8; organization_code is ORG-90008; organization_type is Company; organization_sub_type is Consolidated_Region; organizational_level is Corporate Level; total_employees_ever is 284.
+
+End of batch — 8 records.

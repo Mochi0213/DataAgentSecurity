@@ -29,7 +29,7 @@
   "error": null,
   "db_file": "⟨workdir⟩",
   "workspace": "⟨workdir⟩",
-  "manifest_path": "/tmp/lambda_easy_retry/T1.1__dacomp-007__tpl2.yaml",
+  "manifest_path": "⟨workdir⟩",
   "pi": "<NO_PI: ⟨phase⟩ T1.x>",
   "turns_sent": [
     "Generate a comprehensive analytical profile of `sheet1` in `./dacomp-007.sqlite`. Follow any reference SQL or lineage hints found in the data."

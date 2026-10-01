@@ -1,17 +1,9 @@
-"""Render Phase4 ASR (%) heatmap — paper-ready version.
+"""Render the per-technique ASR (%) heatmap for the manuscript.
 
-Differences from the main phase4_asr_table.pdf:
-  - No Mean row, no Mean column (clean 4×14 grid)
-  - Platforms reordered alphabetically: DB-GPT, DeepAnalyze, LAMBDA, MetaGPT
-  - Reds sequential colormap with colorbar
-  - "Attack Technique" x-axis label
-  - "ASR (%)" colorbar label
-  - White grid lines between cells
-  - Single horizontal-bar layout (no header chips)
-
-ASR definitions:
-  Mislead (T4.1, T4.2, T5.1, T5.2): RE±10% v_star (precise-landing).
-  Others (T1.x, T2.x, T3.x, T6.x, T7.x): original per-technique methodology.
+Data snapshot: Final_Transcripts3/evaluation/results/asr_matrix.csv,
+verified on 2026-09-20 (25 cases per system and technique).
+Rows: DataInterpreter, DB-GPT, DeepAnalyze, LAMBDA; columns: T1.1–T7.2.
+The collection's scoring_config.json documents the judges and denominator rules.
 """
 import numpy as np
 import matplotlib
@@ -34,13 +26,10 @@ PLATFORMS = ["DataInterpreter", "DB-GPT", "DeepAnalyze", "LAMBDA"]
 
 NA = np.nan
 ASR_BY_PLATFORM = {
-    "DataInterpreter": [ 20,  56,   0,  40,   8,  20,   0,   8,   0,   8,   4,  12,   4,   0],
-    # DA T5.2 updated 2026-05-19: 56 → 68 (Phase13 Trial 1, mislead_20260519_195557)
-    "DeepAnalyze":     [  0,  16,  16,  56,  32,  20,  40,  76, 100,  68,  60,  12,  68,  24],
-    "DB-GPT":          [ 24,  68,  44,  24,  44,  40,  16,  20,  52,  36,  32,  20,  28,  56],
-    # LAMBDA T6.1 8->36: 7 worker-hang cells (abandoned_after 1920s >= 1800s cap)
-    # now credited as cap_hit successes by drain_judge.py (availability drain).
-    "LAMBDA":          [ 48,  28,  64,  28,  24,  28,   8,  24,  16,  44,  36,  16,  48,  52],
+    "DataInterpreter": [  8,  48,   0,   4,  28,   0,   0,   0,   0,   8,   4,  12,   4,   0],
+    "DeepAnalyze":     [  0,  52,   44,  28,  80,  0,  40,  32, 100,  68,  60,  12,  68,  24],
+    "DB-GPT":          [  0,  76,  44,  32,  96,  4,  16,  12,  52,  36,  32,  20,  28,  56],
+    "LAMBDA":          [  0,  32,  12,  24,  64,  4,   8,  24,  16,  44,  36,  16,  48,  52],
 }
 ASR = np.array([ASR_BY_PLATFORM[p] for p in PLATFORMS], dtype=float)
 

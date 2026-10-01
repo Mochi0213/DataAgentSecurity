@@ -1,6 +1,7 @@
 # Database — DAComp-DA SQLite Files
 
-This directory holds the 27 SQLite databases that all manifests in
+This directory holds the 27 SQLite databases (selected from the 100
+DAComp-DA instances based on each attack's prerequisites) that all manifests in
 `test_case/{Hijack,Mislead,Drain}/manifests/` reference via their `db` /
 `db_file` fields. **The actual `.sqlite` files are not bundled with this
 repo — you must download them from the public DAComp-DA dataset before
@@ -51,10 +52,10 @@ listed in the manifest below; drop them into this directory.
 
 ```
 dacomp-001  dacomp-007  dacomp-017  dacomp-019  dacomp-021
-dacomp-025  dacomp-034  dacomp-043  dacomp-044  dacomp-048
-dacomp-054  dacomp-055  dacomp-061  dacomp-063  dacomp-067
-dacomp-072  dacomp-073  dacomp-080  dacomp-081  dacomp-083
-dacomp-084  dacomp-085  dacomp-086  dacomp-089  dacomp-090
+dacomp-025  dacomp-033  dacomp-034  dacomp-043  dacomp-044
+dacomp-048  dacomp-054  dacomp-055  dacomp-061  dacomp-063
+dacomp-067  dacomp-072  dacomp-073  dacomp-080  dacomp-081
+dacomp-083  dacomp-084  dacomp-085  dacomp-086  dacomp-090
 dacomp-091  dacomp-092
 ```
 
